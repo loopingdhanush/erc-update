@@ -40,6 +40,7 @@ const useCountUp = (end, duration = 2) => {
     }, 1000 / 60);
 
     return () => clearInterval(timer);
+    
   }, [end, duration]);
 
   return count;

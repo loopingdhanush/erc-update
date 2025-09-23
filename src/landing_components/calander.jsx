@@ -2,10 +2,16 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const events = {
-  "2025-08-24": [{ title: "Hyderabad Marathon - 2025", url: "https://nmdchyderabadmarathon.com/" }],
-  "2025-11-09": [{ title: "Erode Marathon - 2025", url: "https://erodemarathon.com/" }],
-  "2025-08-10": [{ title: "Kangayam Marathon - 2025", url: "https://kangayammarathon.com/" }],
-  "2025-09-05": [{ title: "Erode Runners Club - 5 KM Awareness Run", url: "https://forms.gle/MZExg5iK5b8ym6o16" }],
+  "2025-09-05": [{ title: "Erode Runners Club - 5 KM Awareness Run at Erode Collector Office", assemble: "Start Time - 5:30 AM" }],
+  "2025-09-07": [{ title: "Gobi Marathon - 2025", assemble: "" ,url:"https://gobimarathon.in/" }],
+  "2025-09-14": [{ title: "Erode Runners Club - 10 KM Run at SPB Colony" , assemble: "Start Time - 5:30 AM" }],
+  "2025-09-21": [{ title: "Erode Runners Club - 10 KM Run at Railway Institute (Poonduari Road)" , assemble: "Start Time - 5:30 AM" }],
+  "2025-09-28": [{ title: "Erode Runners Club - 10 KM Run at Flyover" , assemble: "Start Time - 5:30 AM" }],
+  "2025-10-05": [{ title: "Erode Runners Club - Strength Training at Railway Institute" , assemble: "Start Time - 6:00 AM" }],
+  "2025-10-12": [{ title: "Erode Runners Club - 10 KM Run at VOC Ground (Sathy Road)" , assemble: "Start Time - 5:30 AM" }],
+  "2025-10-26": [{ title: "Erode Runners Club - 10 KM Run at Pallipalayam" , assemble: "Start Time - 5:30 AM" }],
+  "2025-11-02": [{ title: "Erode Runners Club - Strength Training at TUFF" , assemble: "Start Time - 6:00 AM" }],
+  "2025-11-09": [{ title: "Erode Marathon - 2025", assemble: "" , url: "https://www.erodemarathon.com/" }],
 };
 
 function formatMonth(date) {
@@ -149,6 +155,8 @@ export default function CalendarEvents() {
                       >
                         {event.title}
                       </a>
+                      <br />
+                      <a className="font-bold text-blue-700">{event.assemble}</a>
                     </li>
                   ))}
                 </ul>
