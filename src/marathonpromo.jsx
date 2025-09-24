@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import marathonPoster from "./assets/promo.jpg";
+import marathonPoster from "./assets/em-25.jpg";
 
 export default function MarathonPromo() {
   return (
@@ -21,23 +21,23 @@ export default function MarathonPromo() {
       />
 
       {/* Overlay with CTA */}
-      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/100 to-transparent p-4 pt-28 flex flex-row items-end justify-between">
+      <div className="absolute bottom-0 left-0  bg-black/50 backdrop-blur-md p-4  flex flex-col items-start justify-end rounded-tr-3xl">
         {/* Text */}
-        <div>
-          <h3 className="text-lg md:text-xl font-bold text-white">
-            5 km Awareness Run
+        
+          <h3 className="text-md md:text-xl font-bold text-white">
+            Erode Marathon 2025
           </h3>
-          <p className="text-sm text-gray-200">
-            September 5, 2025 • Erode Collectorate
+          <p className="text-sm font-bold text-white">
+            November 9, 2025
           </p>
-        </div>
+        
 
         {/* Button */}
         <a
-          href="https://forms.gle/MZExg5iK5b8ym6o16"
+          href="https://www.erodemarathon.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#007CC2] text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition border-2 border-blue-800"
+          className="bg-yellow-300 text-black px-4 py-2 mt-2 rounded-lg font-bold hover:bg-blue-500 hover:text-white transition"
         >
           Register Now
         </a>
