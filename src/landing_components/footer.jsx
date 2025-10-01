@@ -2,7 +2,7 @@ import logoFull from "../assets/main_club_logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-black py-10 px-6">
+    <footer className="bg-black py-10 px-6 border-t border-gray-800 ">
       <div className="grid lg:grid-cols-2 grid-cols-1 max-w-6xl mx-auto md:gap-x-8 ">
         
         {/* Left side: Logo + About */}

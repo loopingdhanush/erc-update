@@ -92,12 +92,12 @@ At the heart of Erode Runners Club is a simple belief: running is for everyone. 
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-all flex flex-col items-center gap-3 border border-gray-100"
+              className="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-all flex flex-col items-center gap-3 border border-gray-100 dark:border-blue-600 dark:bg-gradient-to-br dark:from-black/60 dark:to-blue-900/30"
             >
-              <h2 className="text-5xl font-extrabold bg-gradient-to-r from-[#374291] to-blue-600 bg-clip-text text-transparent">
+              <h2 className="text-5xl font-extrabold bg-gradient-to-r from-[#374291] to-blue-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-blue-200">
                 {stat.value}+
               </h2>
-              <p className="text-gray-700 font-medium">{stat.label}</p>
+              <p className="text-gray-700 font-semibold dark:text-blue-300">{stat.label}</p>
             </motion.div>
           ))}
         </div>

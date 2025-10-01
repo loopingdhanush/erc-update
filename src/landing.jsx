@@ -68,15 +68,15 @@ export default function Landing() {
 
   if (!isLoaded) {
     return (
-      <div className="flex items-center justify-center h-screen w-screen bg-white">
+      <div className="flex items-center justify-center h-screen w-screen bg-white ">
         <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-600"></div>
       </div>
     );
   }
 
   return (
-    <div>
-      <div className="h-24"></div>
+    <div className="bg-white dark:bg-black text-black transition-colors duration-500 ease-in-out">
+      <div className="h-24 "></div>
 
       <div className="max-w-7xl mx-auto px-2">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" style={{ minHeight: '70vh' }}>

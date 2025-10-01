@@ -37,7 +37,7 @@ const courseinfo = [
 
 export default function Course({id}) {
   return (
-    <section id={id} className="relative bg-white ">
+    <section id={id} className="relative ">
       <div className="mx-4 md:pt-20 pt-10">
         
         <motion.div
@@ -54,7 +54,7 @@ export default function Course({id}) {
         </motion.div>
 
         <motion.p
-          className="text-xl text-gray-800 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 futura-font"
+          className="text-xl text-gray-800 dark:text-blue-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -80,11 +80,11 @@ export default function Course({id}) {
                 <img src={course.icon} alt="Icon" className="w-8 h-8" />
               </div>
 
-              <h3 className="text-2xl text-[#007CC2] font-bold text-center mb-4 kollektif-font">
+              <h3 className="text-2xl text-[#007CC2] font-bold text-center mb-4 ">
                 {course.title}
               </h3>
 
-              <p className="text-gray-900 dark:text-orange-100 text-center futura-font leading-relaxed">
+              <p className="text-gray-900 dark:text-blue-100 text-center  leading-relaxed">
                 {course.description}
               </p>
             </motion.div>

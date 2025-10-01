@@ -1,9 +1,17 @@
 import { useState, useEffect } from "react";
 import logoFull from "../assets/main_club_logo.png";
 import { motion } from "framer-motion";
+import lightmode from "../assets/lightmode.png";
+import darkmode from "../assets/darkmode.svg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [darkMode, setDarkMode] = useState(() => {
+  const saved = localStorage.getItem("darkMode");
+  if (saved !== null) return saved === "true";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+});
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -22,6 +30,15 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
+
   return (
     <>
       {/* Overlay for mobile */}
@@ -39,33 +56,33 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 w-[98%] ">
-          <div className="bg-white/80 backdrop-blur-md shadow-lg border border-[#374291]/30 rounded-2xl px-6 py-2 flex items-center justify-between">
+        <div className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 w-[98%]">
+          <div className="bg-white/80 dark:bg-black/40 dark:text-white backdrop-blur-md shadow-lg border border-[#374291]/30 dark:border-blue/80 rounded-2xl px-6 py-2 flex items-center justify-between">
             
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2">
-              <img src={logoFull} className="h-12 rounded-full" alt="Logo" />
+              <img src={logoFull} className="h-12 rounded-full dark:brightness-150" alt="Logo" />
             </a>
 
             {/* Desktop buttons */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-4 dark:text-blue-300 dark:font-bold" >
               <button
                 onClick={() =>
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }
-                className="font-semibold border-r border-gray-800 pr-4"
+                className=" border-r border-gray-800 dark:border-blue-300  pr-4"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollTo("about")}
-                className="font-semibold border-r border-gray-800 pr-4"
+                className=" border-r border-gray-800 dark:border-blue-300 pr-4"
               >
                 About Us
               </button>
               <button
                 onClick={() => scrollTo("benefits")}
-                className="font-semibold  pr-4"
+                className="pr-4"
               >
                 Benefits
               </button>
@@ -73,6 +90,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Contact */}
+            <div className="flex flex-row">
             <button
               onClick={() =>
                 window.scrollTo({
@@ -80,10 +98,17 @@ export default function Navbar() {
                   behavior: "smooth",
                 })
               }
-              className="hidden lg:block text-sm font-semibold text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 h-8"
+              className="hidden dark:bg-black dark:text-blue-200 lg:block text-sm font-semibold text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 h-8"
             >
               Contact Us
             </button>
+
+            <img 
+            onClick={() => setDarkMode(!darkMode)}  src={darkMode ? lightmode : darkmode}
+            className="hidden lg:block text-sm dark:bg-black dark:text-white font-semibold p-1  text-gray-600 border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-8 w-8 ml-4 hover:cursor-pointer">            
+            </img>
+
+            </div>
 
             {/* Mobile menu button */}
             <div className="lg:hidden flex items-center">
@@ -112,7 +137,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-64 h-full bg-white text-black shadow-lg transform ${
+        className={`fixed top-0 left-0 w-64 h-full bg-white text-black dark:bg-black dark:text-white shadow-lg transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 z-50 p-6 flex flex-col gap-4`}
       >
@@ -152,6 +177,8 @@ export default function Navbar() {
           Benefits
         </button>
 
+        
+
         <button
           onClick={() =>
             window.scrollTo({
@@ -159,10 +186,17 @@ export default function Navbar() {
               behavior: "smooth",
             })
           }
-          className="font-semibold text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 mt-4"
+          className="font-semibold text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 dark:bg-black dark:text-white shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 mt-4"
         >
           Contact Us
         </button>
+
+        <img 
+            onClick={() => setDarkMode(!darkMode)}  src={darkMode ? lightmode : darkmode}
+            className=" lg:block text-sm dark:bg-black dark:text-white font-semibold  text-gray-600 border-2 p-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-10 w-10">            
+        </img>
+
+        
       </div>
     </>
   );
