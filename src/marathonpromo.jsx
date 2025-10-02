@@ -34,7 +34,7 @@ export default function MarathonPromo() {
 
         {/* Button */}
         <a
-          href="https://www.erodemarathon.com/"
+          href="https://erodemarathon.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-yellow-300 text-black px-4 py-2 mt-2 rounded-lg font-bold hover:bg-blue-500 hover:text-white transition"
