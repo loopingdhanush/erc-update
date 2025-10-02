@@ -6,8 +6,7 @@ import {
 
 import Navbar from "./landing_components/Navbar";
 import Landing from "./landing";
-import Resources from "./resources";
-import Contact from "./contact";
+
 
 
 function App() {

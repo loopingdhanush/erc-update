@@ -2,8 +2,8 @@ import logoFull from "../assets/main_club_logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-black py-10 px-6">
-      <div className="grid lg:grid-cols-2 grid-cols-1 max-w-6xl mx-auto md:gap-x-8 ">
+    <footer className="bg-black py-10  border-t border-gray-800 ">
+      <div className="grid lg:grid-cols-2 grid-cols-1 max-w-6xl mx-auto md:gap-x-8 px-6">
         
         {/* Left side: Logo + About */}
         <div className="lg:text-left mb-2 lg:mb-0">
@@ -82,18 +82,17 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom strip */}
-      <div className="mt-10 border-t border-gray-700 pt-6 px-6 flex flex-col md:flex-row items-center justify-between">
-  {/* Left side - small text */}
-  <p className="text-sm text-gray-500 mb-3 md:mb-0">
-    Proudly made by students of <a className="hover:text-orange-300 transition fade-in-out"><span className="font-semibold">Easy Exam Academy</span></a>
-  </p>
+  {/* Bottom strip */}
+      <div className="mt-10 border-t border-gray-800 pt-6 px-12 flex flex-col md:flex-row items-center justify-between">
+      
+      <p className="text-sm text-gray-500 mb-3 md:mb-0 text-center">
+        Proudly made by students of <a className="hover:text-orange-300 transition fade-in-out"><span className="font-semibold">Easy Exam Academy</span></a>
+      </p>
 
-  {/* Right side - main copyright */}
-  <p className="text-gray-500 kollektif-font text-center md:text-right">
-    © {new Date().getFullYear()} Erode Runners Club <br></br>All Rights Reserved
-  </p>
-</div>
+      <p className="text-gray-500 kollektif-font text-center md:text-right">
+        © {new Date().getFullYear()} Erode Runners Club <br></br>All Rights Reserved
+      </p>
+    </div>
 
     </footer>
   );

@@ -25,6 +25,12 @@
   font-family: 'Futura Std', sans-serif;                                      
 }
 
+.ps {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body, * {
-  font-family: 'PT Sans', sans-serif !important;
+  font-family: 'PT Sans', sans-serif ;
 }

@@ -39,7 +39,7 @@ export default function Timeline() {
           Timeline
         </h2>
 
-        <p className="mt-3 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto text-center">
+        <p className="mt-3 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto text-center dark:text-blue-100">
           A journey from a small running group to hosting one of Tamil Nadu’s most anticipated marathons.
         </p>
 
@@ -77,17 +77,17 @@ export default function Timeline() {
                       <p className="text-gray-700 dark:text-gray-300">
                         Visit{" "}
                         <a
-                          href="https://www.erodemarathon.com"
+                          href="https://erodemarathon.com"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#007CC2] font-semibold underline"
                         >
-                          www.erodemarathon.com
+                          erodemarathon.com
                         </a>{" "}
                         for registration.
                       </p>
                       <a
-                        href="https://www.erodemarathon.com"
+                        href="https://erodemarathon.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-3 px-6 py-2 bg-[#007CC2] text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
