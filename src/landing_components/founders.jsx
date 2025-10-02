@@ -82,7 +82,7 @@ export default function FoundingMembers() {
         </div>
 
         
-<div className="max-w-4xl mx-auto bg-white dark:bg-black shadow-lg border border-blue-200 shadow-blue-200 rounded-2xl overflow-hidden mt-16">
+<div className="max-w-4xl mx-auto bg-white dark:bg-black shadow-lg border border-blue-400 shadow-blue-300 rounded-2xl overflow-hidden mt-16">
         <div className="md:flex items-center">
        
           <div className="md:w-1/3 flex justify-center p-4">

@@ -119,11 +119,11 @@ At the heart of Erode Runners Club is a simple belief: running is for everyone. 
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
-              pauseOnMouseEnter: false,
+              pauseOnMouseEnter: true,
             }}
             breakpoints={{
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              640: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
             }}
           >
             {[erimg1,erimg12,erimg3,erimg4,erimg5,erimg6,erimg7,erimg8].map((img, index) => (
@@ -155,12 +155,12 @@ At the heart of Erode Runners Club is a simple belief: running is for everyone. 
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
-              pauseOnMouseEnter: false,
+              pauseOnMouseEnter: true,
               reverseDirection: true
             }}
             breakpoints={{
-              640: { slidesPerView: 2, },
-              1024: { slidesPerView: 3 },
+              640: { slidesPerView: 3, },
+              1024: { slidesPerView: 4 },
             }}
           >
             {[erimg9,erimg10,erimg11,erimg2,erimg13,erimg14,erimg15,erimg16].map((img, index) => (
