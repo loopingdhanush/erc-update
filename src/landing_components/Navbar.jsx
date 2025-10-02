@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import logoFull from "../assets/main_club_logo.png";
 import { motion } from "framer-motion";
 import lightmode from "../assets/lightmode.png";
-import darkmode from "../assets/darkmode.svg";
+import darkmode from "../assets/darkmode.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +61,7 @@ export default function Navbar() {
             
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2">
-              <img src={logoFull} className="h-12 rounded-full dark:brightness-150" alt="Logo" />
+              <img src={logoFull} className="h-12 rounded-full dark:brightness-150 drop-shadow-[0_4px_6px_rgba(255,255,255,0.3)] " alt="Logo" />
             </a>
 
             {/* Desktop buttons */}
