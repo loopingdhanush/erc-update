@@ -1,11 +1,12 @@
 import logoFull from "../assets/main_club_logo.png";
+import erdm from "../assets/erdm.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-black py-10  border-t border-gray-800 ">
+    <footer className="bg-black pt-10 pb-6  border-t border-gray-800 ">
       <div className="grid lg:grid-cols-2 grid-cols-1 max-w-6xl mx-auto md:gap-x-8 px-6">
         
-        {/* Left side: Logo + About */}
+       
         <div className="lg:text-left mb-2 lg:mb-0">
           <div className="flex items-center space-x-2">
             <a href="/">
@@ -26,7 +27,30 @@ export default function Footer() {
             fitness, health, and togetherness through events, training
             plans, and group runs.
           </p>
+
+          <br></br>
+
+          <div className="flex items-center space-x-2">
+            <a href="/">
+              <img
+                src={erdm}
+                className="h-10 rounded-full"
+                alt="Logo"
+              />
+            </a>
+            <div className="flex flex-col items-start">
+              <h1 className="text-white kollektif-font text-md md:text-xl font-semibold leading-none">
+                Erode Marathon 2025
+              </h1>
+              <p className="text-white kollektif-font text-xs md:text-md leading-none">09 November 2025</p>
+            </div>
+          </div>
+          <p className="text-gray-400 mt-2 futura-font max-w-md">
+            Powered by Erode Runners, has been held annually since 2022 and is one of Tamil Nadu’s largest running event. Bringing together fitness enthusiasts from all walks of life, it continues to promote health, unity, and community spirit across the state.
+          </p>
         </div>
+
+        
 
         {/* Right side: Links + Contact */}
         <div className="md:grid grid-cols-2">
@@ -39,6 +63,7 @@ export default function Footer() {
               <li><a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">Home</a></li>
               <li><a onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">About Us</a></li>
               <li><a onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">Benefits</a></li>
+              <li><a href="https://erodemarathon.com" className="text-gray-400 hover:text-blue-100 transition-colors duration-200 futura-font cursor-pointer">Erode Marathon 2025</a></li>
             </ul>
           </div>
 

@@ -6,7 +6,7 @@ import heroimagem from "../assets/heroimg.png";
 
 export default function Hero() {
   return (
-    <div className="px-2 h-full">
+    <div className=" h-full">
       <section className="relative flex flex-col bg-gradient-to-t from-white to-white rounded-3xl border-2 border-[#374291] dark:border-[#007CC2] overflow-hidden h-full">
         <div className="pt-12 px-6 flex flex-col relative z-10 flex-grow dark:bg-black dark:text-white">
           <motion.span
@@ -27,7 +27,7 @@ export default function Hero() {
               bg-gradient-to-r from-[#007CC2] to-blue-900 dark:from-blue-100 dark:to-[#007CC2]
               text-center drop-shadow-lg ps"
           >
-            Live to Run <br />
+            Live to Run<br />
             <span className="text-5xl md:text-7xl text-transparent bg-clip-text 
               bg-gradient-to-r to-[#007CC2] from-blue-900 dark:to-blue-100 dark:from-[#007CC2]
               text-center drop-shadow-lg ps ">
