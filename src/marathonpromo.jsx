@@ -4,13 +4,18 @@ import marathonPoster from "./assets/em-25.jpg";
 
 export default function MarathonPromo() {
   return (
+    <div>
+      <h2 className="text-xl md:text-xl font-bold dark:text-blue-300 text-[#374291] mb-2 ml-4 ">
+        Upcoming Event  
+      </h2>
     <motion.div
-      className="relative h-full bg-white rounded-2xl border shadow-lg overflow-hidden"
+      className="relative h-full bg-white rounded-2xl border shadow-lg overflow-hidden w-[400px] h-[400px]"
       initial={{ opacity: 0, y: -40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      
       {/* Poster */}
       <img
         src={marathonPoster}
@@ -42,6 +47,6 @@ export default function MarathonPromo() {
           Register Now
         </a>
       </div>
-    </motion.div>
+    </motion.div></div>
   );
 }

@@ -79,7 +79,7 @@ export default function Landing() {
       <div className="h-24 "></div>
 
       <div className="max-w-7xl mx-auto px-2">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" style={{ minHeight: '70vh' }}>
+        <div className="grid grid-cols-1  gap-4 md:gap-6" style={{ minHeight: '70vh' }}>
           {/* Left Hero (takes 2 columns) */}
           <div className="md:col-span-2 flex">
             <div className="flex-1">
@@ -88,12 +88,18 @@ export default function Landing() {
           </div>
 
           {/* Right side stacked - both components will share equal height */}
-          <div className="flex flex-col gap-4">
-            <div className="flex-1">
+          <div className="flex flex-row gap-4 md:gap-6 h-full justify-between flex-grow flex-wrap">
+            <div className="flex-1 w-[400px]">
+              
+              <CalendarEvents />
+            </div>
+            
+            <div className="flex-1 ">
               <MarathonPromo />
             </div>
-            <div className="flex-1">
-              <CalendarEvents />
+            
+            <div className="flex-1 ">
+              <Swiperimg />
             </div>
           </div>
         </div>

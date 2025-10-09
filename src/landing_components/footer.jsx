@@ -108,7 +108,7 @@ export default function Footer() {
       </div>
 
   {/* Bottom strip */}
-      <div className="mt-10 border-t border-gray-800 pt-6 px-12 flex flex-col md:flex-row items-center justify-between">
+      <div className="mt-10 border-t border-gray-100 pt-6 px-12 flex flex-col md:flex-row items-center justify-between">
       
       <p className="text-sm text-gray-500 mb-3 md:mb-0 text-center">
         Proudly made by students of <a className="hover:text-orange-300 transition fade-in-out"><span className="font-semibold">Easy Exam Academy</span></a>

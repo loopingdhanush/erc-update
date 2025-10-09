@@ -47,13 +47,13 @@ export default function CalendarEvents() {
   const today = new Date().toDateString();
 
   return (
-    <section className="h-full flex flex-col">
+    <section className="h-full flex flex-col ">
       {/* Section Heading */}
-      <h2 className="text-xl md:text-xl font-bold dark:text-blue-300 text-[#374291] mb-2 text-center">
+      <h2 className="text-xl md:text-xl font-bold dark:text-blue-300 text-[#374291] mb-2 ml-4">
         Marathon Events Calendar
       </h2>
 
-      <div className="flex-1 bg-white rounded-2xl border shadow-lg p-4 flex flex-col dark:bg-black dark:border-[#007CC2]">
+      <div className="flex-1 bg-white rounded-2xl border shadow-lg p-4 flex flex-col dark:bg-black dark:border-[#007CC2] ">
         {/* Blink style */}
         <style>
           {`

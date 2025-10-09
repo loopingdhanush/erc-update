@@ -7,16 +7,15 @@ import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "https://eroderunnersclub.com/wp-content/uploads/2024/03/391722641_296559289802157_4348903873984384376_n.jpg",
-  "https://eroderunnersclub.com/wp-content/uploads/2024/03/391702184_296559396468813_5509998848039475028_n.jpg",
-  "https://eroderunnersclub.com/wp-content/uploads/2024/03/391693152_17914549562811887_2037428690816349982_n.jpg",
-  "https://eroderunnersclub.com/wp-content/uploads/2024/03/391675185_297084686416284_7648262738615547471_n.jpg",
-  "https://eroderunnersclub.com/wp-content/uploads/2024/03/winners-scaled.jpg",
+  "https://eroderunnersclub.com/assets/erimg4-D3zjO-2I.jpg"
 ];
 
 export default function SwiperImg() {
   return (
- <div className="h-full w-full md:max-w-[400px] flex justify-center">
+ <div className="h-full w-full md:max-w-[400px] flex flex-col justify-center">
+  <h2 className="text-xl md:text-xl font-bold dark:text-blue-300 text-[#374291] mb-2 ml-4">
+        Featured Events 
+      </h2>
   <motion.div
     className="border absolute h-full rounded-2xl max-w-[400px] shadow-2xl relative overflow-hidden md:mx-0 "
     initial={{ opacity: 0, y: -60 }}
@@ -53,7 +52,7 @@ export default function SwiperImg() {
    
     <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
     <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black/100 to-transparent rounded-b-2xl"></div>
-    <p className=" absolute top-4 left-4 text-2xl font-bold text-white">Featured Events</p>
+    <p className=" absolute top-4 left-4 text-2xl font-bold text-white"></p>
     <div className="absolute bottom-4 left-4">
         <p className=" text-sm font-semibold text-white">29 October 2025</p>
         <p className=" text-lg font-bold text-white">Erode Marathon - 2025 </p>

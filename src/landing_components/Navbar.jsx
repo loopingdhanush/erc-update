@@ -44,7 +44,7 @@ export default function Navbar() {
       {/* Overlay for mobile */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -56,27 +56,24 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 w-[98%]">
-          <div className="bg-white/80 dark:bg-black/40 dark:text-white backdrop-blur-md shadow-lg border border-[#374291]/30 dark:border-blue/80 rounded-2xl px-6 py-2 flex items-center justify-between">
+        <div className={`fixed top-3 left-1/2 transform -translate-x-1/2 z-${ isOpen ? 49 : 50 } w-[98%] max-w-7xl px-2 `}>
+          <div className="relative bg-white/80 dark:bg-black/40 dark:text-white backdrop-blur-md shadow-lg border border-[#374291]/30 dark:border-blue/80 rounded-2xl px-6 py-2 flex justify-between items-center h-16 px-4 ">
             
-            {/* Logo */}
-            <a href="/" className="flex items-center space-x-2">
-              <img src={logoFull} className="h-12 rounded-full dark:brightness-150 drop-shadow-[0_4px_6px_rgba(255,255,255,0.3)] " alt="Logo" />
-            </a>
+            
 
             {/* Desktop buttons */}
-            <div className="hidden lg:flex items-center space-x-4 dark:text-blue-300 dark:font-bold" >
+            <div className="hidden lg:flex items-center text-sm space-x-4 text-[#007cc2] dark:text-blue-300 dark:font-bold font-semibold " >
               <button
                 onClick={() =>
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }
-                className=" border-r border-gray-800 dark:border-blue-300  pr-4"
+                className=" border- border-gray-800 dark:border-blue-300  pr-4"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollTo("about")}
-                className=" border-r border-gray-800 dark:border-blue-300 pr-4"
+                className=" border- border-gray-800 dark:border-blue-300 pr-4"
               >
                 About Us
               </button>
@@ -89,6 +86,11 @@ export default function Navbar() {
               
             </div>
 
+            {/* Logo */}
+            <a href="/" className="flex items-center space-x-2 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <img src={logoFull} className="h-12 rounded-full dark:brightness-150 drop-shadow-[0_4px_6px_rgba(255,255,255,0.3)] " alt="Logo" />
+            </a>
+
             {/* Desktop Contact */}
             <div className="flex flex-row">
             <button
@@ -98,14 +100,14 @@ export default function Navbar() {
                   behavior: "smooth",
                 })
               }
-              className="hidden dark:bg-black dark:text-blue-200 lg:block text-sm font-semibold text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 h-8"
+              className="hidden dark:bg-black dark:text-blue-200 lg:block text-sm font-semibold text-[#007cc2] border-2 hover:bg-blue-100 border-[#007cc2] shadow-md hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 h-8"
             >
               Contact Us
             </button>
 
             <img 
             onClick={() => setDarkMode(!darkMode)}  src={darkMode ? lightmode : darkmode}
-            className="hidden lg:block text-sm dark:bg-black dark:text-white font-semibold p-1  text-gray-600 border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-8 w-8 ml-4 hover:cursor-pointer">            
+            className="hidden lg:block text-sm dark:bg-black dark:text-white font-semibold p-1  text-gray-600 border-2 border-[#007cc2] shadow-md hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-8 w-8 ml-4 hover:cursor-pointer">            
             </img>
 
             </div>
