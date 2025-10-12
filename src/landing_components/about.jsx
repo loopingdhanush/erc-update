@@ -64,25 +64,25 @@ export default function About({id}) {
 
       {/* Dark overlay for readability */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-0"></div>
-       <div className="absolute top-0 left-0 w-full  md:h-[900px] h-[1024px]   bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
+       <div className="absolute top-0 left-0 w-full  md:h-[900px] h-[1024px] bg-black/70 rounded-t-2xl"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto text-white">
+      <div className="relative z-10 max-w-6xl text-white flex flex-col">
         {/* Headings */}
-        <h1 className="text-md md:text-2xl font-normal kollektif-font text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200 pb-2 text-shadow-lg text-shadow-black"> About Us </h1> 
-        <h1 className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400 mb-8 pb-2 text-shadow-sm"> The Journey of Erode Runners </h1>
+        <h1 className="text-md mx-4 md:text-2xl font-normal kollektif-font  text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200 pb-2 text-shadow-lg text-shadow-black"> About Us </h1> 
+        <h1 className="text-3xl mx-4 md:text-5xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400 mb-8 pb-2 text-shadow-sm"> The Journey of Erode Runners </h1>
 
         {/* Paragraph */}
-        <p className="text-center text-gray-100 mx-4 text-lg font-semibold text-shadow-xl">
-          Erode Runners Club is a not-for-profit community that began as an informal group of passionate runners in 2016 and became a registered club in 2020. What started with a handful of enthusiasts has now grown into a vibrant running community that brings together people from all walks of life to celebrate fitness, friendship, and the joy of running.
-<br></br><br></br>
-Our members have represented Erode in marathons and ultra marathons across India, carrying the spirit of our city wherever they run.
-<br></br><br></br>
-At the heart of Erode Runners Club is a simple belief: running is for everyone. We are driven by the motto “By the runner, for the runner”, and our mission is to inspire more people to take their first step towards fitness.
-                  </p>
+        <p className="text-gray-100 mx-4 text-lg font-semibold text-shadow-xl">
+          Erode Runners Club is a <span className="bg-blue-500"> not-for-profit community </span> that began as an informal group of passionate runners in 2016  and became a registered club in 2020. What started with a handful of enthusiasts has now grown into a vibrant running community that brings together people from all walks of life to celebrate fitness, friendship, and the joy of running.
+        <br></br><br></br>
+        Our members have <span className="bg-blue-500"> represented Erode in marathons and ultra marathons across India </span>, carrying the spirit of our city wherever they run.
+        <br></br><br></br>
+        At the heart of Erode Runners Club is a simple belief, Running is for everyone. We are driven by the motto <span className="bg-blue-500">“ By The Runners, For The Runners ”</span> and our mission is to inspire more people to take their first step towards fitness.
+        </p>
 
         {/* Stats */}
-        <div className="mt-12 max-w-md mx-auto gap-6">
+        <div className="mt-12 max-w-md mx-4 gap-6">
           {[
             { value: members, label: "Active Members", icon: "👥" },
           ].map((stat, i) => (

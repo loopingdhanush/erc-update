@@ -6,18 +6,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+
 const images = [
   "https://eroderunnersclub.com/assets/erimg4-D3zjO-2I.jpg"
 ];
 
 export default function SwiperImg() {
   return (
- <div className="h-full w-full md:max-w-[400px] flex flex-col justify-center">
-  <h2 className="text-xl md:text-xl font-bold dark:text-blue-300 text-[#374291] mb-2 ml-4">
-        Featured Events 
-      </h2>
+ <div className="h-full w-full max-w-[400px] flex flex-col justify-center items-center md:items-normal mx-auto">
+  <h2 className="text-xl md:text-xl font-bold dark:text-blue-300 text-[#374291] mb-2 ml-4 ">
+      Featured Events 
+  </h2>
   <motion.div
-    className="border absolute h-full rounded-2xl max-w-[400px] shadow-2xl relative overflow-hidden md:mx-0 "
+    className="h-full rounded-2xl max-w-[400px] max-h-[400px] shadow-2xl relative overflow-hidden md:mx-0"
     initial={{ opacity: 0, y: -60 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
@@ -34,8 +35,8 @@ export default function SwiperImg() {
         loop
         className="h-full"
         autoplay={{
-    delay: 3000,       // 3 seconds per slide
-    disableOnInteraction: false, // continue autoplay after manual swipe
+    delay: 3000,      
+    disableOnInteraction: false, // autoplay after manual swipe
   }}
 
       >
