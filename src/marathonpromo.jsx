@@ -1,43 +1,58 @@
 import React from "react";
-import "swiper/css";
-import "swiper/css/navigation";
-import marathonPoster from "./assets/em-25.jpg";
+import erdm from "./assets/erdm.png";
 
-export default function SwiperImg() {
+export default function MarathonPromo() {
   return (
- <div className="h-full w-full md:max-h-[400px] flex flex-col justify-center dark:border-[#007CC2] ">
+    <section className="h-full w-full flex flex-col">
+      <div className="flex-1 rounded-2xl shadow-2xl overflow-hidden border-2 dark:border-[#007CC2] bg-white dark:bg-gray-900 flex flex-col">
 
-  <h2 className="text-xl md:text-xl font-bold dark:text-blue-300 text-[#374291] mb-2 ml-4">Featured Events </h2>
+        
 
-    <div className="h-full rounded-2xl shadow-2xl relative overflow-hidden md:mx-0 border-2 dark:border-[#007CC2]">
+        {/* Header (same style as calendar header) */}
+        <div className="flex items-center justify-center border-b py-2 dark:border-[#007CC2]">
+          <h2 className="text-lg md:text-xl font-bold text-[#374291] dark:text-blue-300">
+            Featured Event
+          </h2>
+        </div>
 
-    <div className="flex h-full flex-col md:flex-row flex justify-center items-center">
-      <img
-          src={marathonPoster}
-          alt="Erode Marathon 2025"
-          className="max-w-[250px] m-4 rounded-xl "
-          loading="eager"
-          decoding="async"
-        />
-    
+        {/* Content */}
+        <div className="flex flex-row-reverse md:flex-col flex-1 ">
 
-    <div className="p-4 flex flex-col  rounded-tr-3xl text-black dark:text-white  justify-center items-center text-center"> 
-        <h3 className="text-md md:text-xl font-bold">Erode Marathon 2025</h3>
-        <p className="text-sm font-bold ">November 16, 2025</p>
-        <p className="mt-2 text-sm md:text-md text-center">Powered by Erode Runners, has been held annually since 2022 and is one of Tamil Nadu’s largest running event. Bringing together fitness enthusiasts from all walks of life, it continues to promote health, unity, and community spirit across the state.</p>
-        <a
-          href="https://erodemarathon.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-yellow-300 text-black px-4 py-2 mt-2 rounded-lg font-bold hover:bg-blue-500 hover:text-white transition ">
-          Register Now
-        </a>
-    </div>
+          {/* Text */}
+          <div className="p-6 flex flex-col justify-center ">
+            <img
+                src={erdm}
+                className="h-12 w-24 mb-2"
+                alt="Logo"
+            />
+            <h2 className="text-left text-2xl font-bold text-transparent bg-clip-text bg-black dark:text-blue-300">
+              Erode Marathon 2025
+            </h2>
+            <h3 className="text-left text-lg font-semibold text-gray-800 dark:text-blue-300">
+              16th November 2025
+            </h3>
+            <h3 className="text-left mb-2 text-xs font-semibold text-gray-800 dark:text-blue-300">
+              5km · 10km · 21km · 42km
+            </h3>
 
-    </div>
+            <p className="text-left text-gray-700 dark:text-blue-100 text-xs leading-relaxed pb-4">
+              Powered by Erode Runners, this annual marathon is one of Tamil Nadu's
+              largest running events uniting fitness lovers and promoting a strong,
+              healthy community spirit since 2022.
+            </p>
 
-    </div>
+            <button
+              className="w-fit dark:bg-black dark:text-blue-200 lg:block text-sm font-semibold border-2 hover:bg-gray-100 border-black shadow-md hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 h-8"
+            >
+              Click to Register 
+            </button>
 
-    </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
   );
 }

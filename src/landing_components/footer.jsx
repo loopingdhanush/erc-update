@@ -42,7 +42,7 @@ export default function Footer() {
               <h1 className="text-white kollektif-font text-md md:text-xl font-semibold leading-none">
                 Erode Marathon 2025
               </h1>
-              <p className="text-white kollektif-font text-xs md:text-md leading-none">09 November 2025</p>
+              <p className="text-white kollektif-font text-xs md:text-md leading-none">16 November 2025</p>
             </div>
           </div>
           <p className="text-gray-400 mt-2 futura-font max-w-md">

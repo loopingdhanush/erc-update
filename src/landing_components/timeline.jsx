@@ -21,7 +21,7 @@ const timelineData = [
   },
   {
     year: "2025",
-    title: "4th Edition Erode Marathon - 9th Nov 2025",
+    title: "4th Edition Erode Marathon - 16th Nov 2025",
     description:
       "",
   },

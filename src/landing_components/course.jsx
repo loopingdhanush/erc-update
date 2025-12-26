@@ -38,7 +38,7 @@ const courseinfo = [
 export default function Course({id}) {
   return (
     <section id={id} className="relative ">
-      <div className="mx-4 md:pt-20 pt-10">
+      <div className="mx-4 md:pt-20 pt-10 text-auto">
         
         <motion.div
           
@@ -54,7 +54,7 @@ export default function Course({id}) {
         </motion.div>
 
         <motion.p
-          className="text-xl text-gray-800 dark:text-blue-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 "
+          className="text-xl text-gray-800 dark:text-blue-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 pl-2 pr-2"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -63,28 +63,26 @@ export default function Course({id}) {
           Being part of our club isn’t just about running, it’s about running smarter, together.
         </motion.p>
 
-        <div className="max-w-6xl mx-auto px-6 md:py-12 py-4  grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="max-w-6xl mx-auto px-6 md:py-12 py-4 grid grid-cols-1 lg:grid-cols-3 gap-12">
           {courseinfo.map((course, index) => (
             <motion.div
               key={index}
-              className="bg-blue-10 dark:bg-gray-900 border-2 border-[#007CC2] 
-                         p-8 rounded-3xl shadow-lg transform transition duration-300 
-                         hover:scale-105 hover:shadow-2xl bg-blue-50"
+              className="md:p-8"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="w-16 h-16 mx-auto flex items-center justify-center 
+              <div className="w-16 h-16 md:mx-auto flex items-center justify-center 
                               mb-6 mt-2 bg-blue-200 dark:bg-gray-800 rounded-full">
                 <img src={course.icon} alt="Icon" className="w-8 h-8" />
               </div>
 
-              <h3 className="text-2xl text-[#007CC2] font-bold text-center mb-4 ">
+              <h3 className="text-2xl text-[#007CC2] font-bold md:text-center mb-4 ">
                 {course.title}
               </h3>
 
-              <p className="text-gray-900 dark:text-blue-100 text-center  leading-relaxed">
+              <p className="text-gray-900 dark:text-blue-100 md:text-center  leading-relaxed">
                 {course.description}
               </p>
             </motion.div>

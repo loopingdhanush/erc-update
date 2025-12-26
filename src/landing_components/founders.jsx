@@ -36,14 +36,19 @@ export default function FoundingMembers() {
                 </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-  
-          <div className="bg-white dark:bg-black  rounded-2xl border border-blue-200 shadow-lg shadow-blue-200 overflow-hidden ">
+
+          <div className="bg-white dark:bg-black rounded-2xl border-2 border-blue-200 shadow-blue-200 overflow-hidden ">
+
+            <div className="relative">
+            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/100 dark:from-black/100 to-transparent z-10"></div>
             <img
               src={member1}
               alt="Dr.G.MADHU SHANKAR"
               className="w-full aspect-video object-cover"
             />
-            <div className="p-4">
+            </div>
+
+            <div className="p-4 z-11">
               <h3 className="text-lg font-semibold text-gray-800 dark:text-blue-300">
                 Dr.&nbsp;G.&nbsp;Madhu Shankar
               </h3>
@@ -51,59 +56,66 @@ export default function FoundingMembers() {
             </div>
           </div>
 
-      
-          <div className="bg-white dark:bg-black rounded-2xl border border-blue-200 shadow-lg shadow-blue-200 overflow-hidden">
+          <div className="bg-white dark:bg-black rounded-2xl border-2 border-blue-200 shadow-blue-200 overflow-hidden ">
+
+            <div className="relative">
+            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/100 dark:from-black/100 to-transparent z-10"></div>
             <img
               src={member2}
-              alt="Mr.V.Krishnamoorthy"
+              alt="Dr.G.MADHU SHANKAR"
               className="w-full aspect-video object-cover"
             />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-blue-300 ">
+            </div>
+
+            <div className="p-4 z-11">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-blue-300">
                 Mr.&nbsp;V.&nbsp;Krishnamoorthy
               </h3>
               <p className="text-sm text-gray-600 dark:text-blue-100">Founding Member</p>
             </div>
           </div>
-         
-          <div className="bg-white dark:bg-black rounded-2xl border border-blue-200 shadow-lg shadow-blue-200 overflow-hidden">
+
+          <div className="bg-white dark:bg-black rounded-2xl border-2 border-blue-200 shadow-blue-200 overflow-hidden ">
+
+            <div className="relative">
+            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/100 dark:from-black/100 to-transparent z-10"></div>
             <img
               src={member3}
-              alt="Placeholder"
+              alt="Dr.G.MADHU SHANKAR"
               className="w-full aspect-video object-cover"
             />
-            <div className="p-4">
+            </div>
+
+            <div className="p-4 z-11">
               <h3 className="text-lg font-semibold text-gray-800 dark:text-blue-300">
                 Dr.&nbsp;A.&nbsp;Arunandhi Chelvan
               </h3>
               <p className="text-sm text-gray-600 dark:text-blue-100">Founding Member</p>
             </div>
           </div>
-        </div>
 
-        
-<div className="max-w-4xl mx-auto bg-white dark:bg-black shadow-lg border border-blue-400 shadow-blue-300 rounded-2xl overflow-hidden mt-16">
+          </div>
+
+
+<div className="max-w-3xl mx-auto bg-white dark:bg-black shadow-lg border-2 border-blue-200 rounded-2xl overflow-hidden mt-16">
         <div className="md:flex items-center">
        
-          <div className="md:w-1/3 flex justify-center p-4">
+          <div className="md:w-1/3 flex md:justify-center p-4 pd-1">
             <img
               src={president}
               alt="President"
-              className="w-40 h-56 object-cover rounded-xl shadow-md"
+              className="w-1/2 md:w-full object-cover rounded-xl shadow-md"
             />
           </div>
      
-          <div className="p-6 md:w-2/3">
-            <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600">
+          <div className="p-6 pt-1 md:w-2/3 flex flex-col justify-center">
+            <h2 className="text-left text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600">
               President
             </h2>
-            <h3 className="text-lg font-semibold text-gray-800 mt-2 dark:text-blue-300">
+            <h3 className="text-left mb-2 text-lg font-semibold text-gray-800 mt-2 dark:text-blue-300">
               Dr.&nbsp;A.&nbsp;Arunandhi Chelvan
             </h3>
-            <p className="text-sm text-gray-600 mb-4 dark:text-blue-100">
-              The Heartbeat of Erode Runners Club
-            </p>
-            <p className="text-gray-700 leading-relaxed dark:text-blue-100">
+            <p className="text-left text-gray-700 leading-relaxed dark:text-blue-100">
               More than a Surgical Oncologist, Dr.&nbsp;A.&nbsp;Arunandhi Chelvan is a runner
               at heart. A true pillar of the Erode Runners Club, he has inspired
               countless runners to lace up and chase their dreams. From several

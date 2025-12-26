@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className=" h-full">
       <section className="  relative flex md:flex-row flex-col bg-white rounded-3xl border-2 border-[#374291] dark:border-[#007CC2] overflow-hidden ">
-        <div className="flex flex-col  relative z-10 flex-grow dark:bg-black dark:text-white p-8">
+        <div className="flex flex-col relative z-10 flex-grow dark:bg-black dark:text-white p-8 text-center md:text-left">
           <motion.span
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,13 +49,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3 }}
-            className="flex md:flex-row flex-col gap-4 mt-4 "
+            className="flex md:flex-row flex-col gap-4 mt-4 mx-auto md:mx-0"
           >
             <a className="dark:bg-black dark:text-white w-48 px-5 py-2 text-sm font-semibold text-white text-center bg-[#007CC2] border-2 border-blue-900 rounded-xl hover:bg-[#007cc2] transition-colors duration-200"
             href="https://erodemarathon.com"
                         target="_blank"
                         rel="noopener noreferrer">
-              Erode Marathon 2025
+              Register Now
             </a>
 
             <button
@@ -74,8 +74,8 @@ export default function Hero() {
         
         
 
-        <div className="w-full overflow-hidden relative flex-grow rounded-r-2xl dark:bg-black dark:text-white">
-          <div className="absolute top-0 left-0 w-64 h-full bg-gradient-to-r from-white/100 dark:from-black/80 to-transparent "></div>
+        <div className="w-full overflow-hidden relative flex-grow md:rounded-r-2xl rounded-br-2xl dark:bg-black dark:text-white">
+          <div className="absolute top-0 left-0 md:w-64 w-full md:h-full h-16 md:bg-gradient-to-r bg-gradient-to-b from-white/100 dark:from-black/100 to-transparent "></div>
           <motion.img
             src={heroimagem}
             alt="Hero runners"

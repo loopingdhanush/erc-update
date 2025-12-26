@@ -56,7 +56,7 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className={`fixed top-3 left-1/2 transform -translate-x-1/2 z-${ isOpen ? 49 : 50 } w-[98%] max-w-7xl px-2 `}>
+        <div className={`fixed top-3 left-1/2 transform -translate-x-1/2 z-${ isOpen ? 49 : 50 } w-[99.9%] max-w-7xl px-2 `}>
           <div className="relative bg-white/80 dark:bg-black/40 dark:text-white backdrop-blur-md shadow-lg border border-[#374291]/30 dark:border-blue/80 rounded-2xl px-6 py-2 flex justify-between items-center h-16 px-4 ">
             
             
@@ -83,8 +83,13 @@ export default function Navbar() {
               >
                 Benefits
               </button>
-              
+
             </div>
+
+            <img 
+              onClick={() => setDarkMode(!darkMode)}  src={darkMode ? lightmode : darkmode}
+              className=" lg:hidden text-sm dark:bg-black dark:text-white font-semibold  text-gray-600 border p-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-10 w-10">            
+            </img>
 
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -113,7 +118,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile menu button */}
-            <div className="lg:hidden flex items-center">
+            <div className="lg:hidden flex items-center ">
               <button
                 onClick={() => setIsOpen(true)}
                 className="text-gray-600 dark:text-gray-300"
@@ -166,12 +171,14 @@ export default function Navbar() {
         >
           Home
         </button>
+
         <button
           onClick={() => scrollTo("about")}
           className="font-medium cursor-pointer"
         >
           About Us
         </button>
+
         <button
           onClick={() => scrollTo("benefits")}
           className="font-medium cursor-pointer"
@@ -188,15 +195,12 @@ export default function Navbar() {
               behavior: "smooth",
             })
           }
-          className="font-semibold text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 dark:bg-black dark:text-white shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 mt-4"
+          className="font-semibold w-fit mx-auto text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 dark:bg-black dark:text-white shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1"
         >
           Contact Us
         </button>
 
-        <img 
-            onClick={() => setDarkMode(!darkMode)}  src={darkMode ? lightmode : darkmode}
-            className=" lg:block text-sm dark:bg-black dark:text-white font-semibold  text-gray-600 border-2 p-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-10 w-10">            
-        </img>
+        
 
         
       </div>
