@@ -18,7 +18,7 @@ export default function Landing() {
     <div className="bg-white dark:bg-black text-black transition-colors duration-500 ease-in-out ">
       <div className="h-24 "></div>
 
-      <div className="max-w-7xl mx-auto px-2">
+      <div className="max-w-7xl mx-auto px-2 sm:px-0">
 
       <div className="flex">
         <div className="flex-1">
@@ -26,10 +26,13 @@ export default function Landing() {
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 items-stretch">
+      <div className="grid grid-cols-1 auto-rows-fr sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 items-stretch">
       <CalendarEvents />
-      <MarathonPromo />
       <Swiperimg />
+      <div className="sm:col-span-2 lg:col-span-1">
+        <MarathonPromo />
+      </div>
+      
       </div>
 
       </div>

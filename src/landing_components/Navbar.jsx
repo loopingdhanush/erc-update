@@ -50,11 +50,9 @@ export default function Navbar() {
       )}
 
       {/* Floating Curved Navbar */}
-      <motion.div
+      <div
         className="z-50"
-        initial={{ y: -80, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+      
       >
         <div className={`fixed top-3 left-1/2 transform -translate-x-1/2 z-${ isOpen ? 49 : 50 } w-[99.9%] max-w-7xl px-2 `}>
           <div className="relative bg-white/80 dark:bg-black/40 dark:text-white backdrop-blur-md shadow-lg border border-[#374291]/30 dark:border-blue/80 rounded-2xl px-6 py-2 flex justify-between items-center h-16 px-4 ">
@@ -140,7 +138,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Mobile Menu */}
       <div

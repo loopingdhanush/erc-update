@@ -11,11 +11,8 @@ export default function FoundingMembers() {
     <section className="py-16 px-4 ">
       <div className="max-w-6xl mx-auto text-center">
         
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        <div
+          
         >
 
           <h1 className="text-lg md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2 ">
@@ -23,17 +20,14 @@ export default function FoundingMembers() {
           </h1>
           <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center pb-2" >Founding Members</h1>
 
-        </motion.div>
+        </div>
 
-         <motion.p
+         <p
                   className="text-xl text-gray-800 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 futura-font"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.3 }}
-                  viewport={{ once: true }}
+                 
                 >
                   The visionaries who transformed a simple idea into the thriving Erode Runners Club
-                </motion.p>
+                </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
 
