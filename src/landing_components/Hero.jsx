@@ -64,7 +64,7 @@ export default function Hero() {
         <div className="w-full overflow-hidden relative flex-grow md:rounded-r-2xl rounded-br-2xl dark:bg-black dark:text-white">
           <div className="absolute top-0 left-0 md:w-64 w-full md:h-full h-16 md:bg-gradient-to-r bg-gradient-to-b from-white/100 dark:from-black/100 to-transparent "></div>
           <img
-            src={heroimagem}
+            src={heroimage}
             alt="Hero runners"
             loading="eager"
             decoding="async"
