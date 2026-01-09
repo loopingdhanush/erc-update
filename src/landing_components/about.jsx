@@ -43,6 +43,8 @@ const useCountUp = (end, duration = 2) => {
 
 export default function About({ id }) {
   const members = useCountUp(200, 2);
+  const marathons = useCountUp(5, 2);
+  const years =  useCountUp(9, 2);
 
   const images1 = [erimg1, erimg12, erimg3, erimg4, erimg5, erimg6, erimg7, erimg8];
   const images2 = [erimg9, erimg10, erimg11, erimg2, erimg13, erimg14, erimg15, erimg16];
@@ -62,7 +64,7 @@ export default function About({ id }) {
         <div className="absolute top-0 left-0 w-full h-full bg-black/70 rounded-t-2xl"></div>
 
       
-        <div className="relative z-10 max-w-6xl text-white flex flex-col">
+        <div className="relative z-10 max-w-6xl text-white flex flex-col mx-auto items-center">
         
           <h1 className="text-md mx-4 md:text-2xl font-normal kollektif-font text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200 pb-2 text-shadow-lg text-shadow-black">
             About Us
@@ -80,9 +82,12 @@ export default function About({ id }) {
           </p>
 
          
-          <div className="mt-12 max-w-md mx-4 gap-6">
+          <div className="mt-12  mx-4 gap-6 grid sm:grid-cols-3 ">
             {[
-              { value: members, label: "Active Members", icon: "👥" },
+              { value: years, label: "Years of Community Running", },
+              { value: members, label: "Active Members", },
+              { value: marathons, label: "Marathon Events Hosted",  },
+             
             ].map((stat, i) => (
               <motion.div
                 key={i}

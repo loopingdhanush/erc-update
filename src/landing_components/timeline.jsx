@@ -23,7 +23,7 @@ const timelineData = [
     year: "2025",
     title: "4th Edition Erode Marathon - 16th Nov 2025",
     description:
-      "",
+      "Held on 16th November 2025, the 4th edition continued Erode Marathon’s legacy as a major running event in Tamil Nadu, welcoming 5,000+ participants of all levels with improved organization and wide participation",
   },
 ];
 
@@ -68,34 +68,11 @@ export default function Timeline() {
                   <h3 className="text-xl md:text-2xl font-bold text-[#007CC2] kollektif-font mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-900 dark:text-orange-100 futura-font leading-relaxed">
+                  <p className="text-gray-900 dark:text-blue-100 futura-font leading-relaxed">
                     {item.description}
                   </p>
 
-                  {item.year === "2025" && (
-                    <div className="">
-                      <p className="text-gray-700 dark:text-gray-300">
-                        Visit{" "}
-                        <a
-                          href="https://erodemarathon.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#007CC2] font-semibold underline"
-                        >
-                          erodemarathon.com
-                        </a>{" "}
-                        for registration.
-                      </p>
-                      <a
-                        href="https://erodemarathon.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-3 px-6 py-2 bg-[#007CC2] text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
-                      >
-                        Click here to register
-                      </a>
-                    </div>
-                  )}
+                  
                 </div>
               </motion.div>
             ))}

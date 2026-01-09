@@ -44,7 +44,7 @@ export default function MarathonPromo() {
             <button
               className="w-fit dark:bg-black dark:text-blue-200 lg:block text-sm font-semibold border-2 hover:bg-gray-100 border-black shadow-md hover:shadow-lg transition duration-300 ease-in-out rounded-xl px-4 py-1 h-8"
             >
-              Click to Register 
+              Visit Erode Marathon
             </button>
 
           </div>

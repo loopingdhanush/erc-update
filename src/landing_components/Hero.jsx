@@ -14,7 +14,7 @@ export default function Hero() {
             className="text-sm text-gray-900 inline-block pb-2 dark:bg-black dark:text-white"
           >
             <span className="font-semibold ">Erode's</span> Running Community,
-            Stronger Together
+            United by Passion
           </span>
 
           <h1
@@ -43,12 +43,7 @@ export default function Hero() {
            
             className="flex md:flex-row flex-col gap-4 mt-4 mx-auto md:mx-0"
           >
-            <a className="dark:bg-black dark:text-white w-48 px-5 py-2 text-sm font-semibold text-white text-center bg-[#007CC2] border-2 border-blue-900 rounded-xl hover:bg-[#007cc2] transition-colors duration-200"
-            href="https://erodemarathon.com"
-                        target="_blank"
-                        rel="noopener noreferrer">
-              Register Now
-            </a>
+            
 
             <button
               onClick={() =>

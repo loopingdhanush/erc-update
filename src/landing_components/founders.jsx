@@ -23,7 +23,7 @@ export default function FoundingMembers() {
         </div>
 
          <p
-                  className="text-xl text-gray-800 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 futura-font"
+                  className="text-xl text-gray-800 dark:text-blue-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 futura-font"
                  
                 >
                   The visionaries who transformed a simple idea into the thriving Erode Runners Club

@@ -6,9 +6,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const images = [
-  "https://eroderunnersclub.com/assets/erimg4-D3zjO-2I.jpg",
-];
+import img1 from '../assets/swiperimage/erode-marathon-1.jpg';
+import img2 from '../assets/swiperimage/erode-marathon-2.jpg';
+import img3 from '../assets/swiperimage/erode-marathon-3.jpg';
+import img4 from '../assets/swiperimage/erode-marathon-4.jpg';
+import img5 from '../assets/swiperimage/erode-marathon-5.jpg';
+import img6 from '../assets/swiperimage/erode-marathon-6.jpg';
+import img7 from '../assets/swiperimage/erode-marathon-7.jpg';
+import img8 from '../assets/swiperimage/erode-marathon-8.jpg';
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+
 
 export default function SwiperImg() {
   return (
@@ -55,7 +63,7 @@ export default function SwiperImg() {
                   </p>
                   <div className="absolute bottom-4 left-4">
                     <p className="text-sm font-semibold text-white">
-                      29 October 2025
+                      16th November 2025
                     </p>
                     <p className="text-lg font-bold text-white">
                       Erode Marathon - 2025

@@ -40,9 +40,9 @@ export default function Footer() {
             </a>
             <div className="flex flex-col items-start">
               <h1 className="text-white kollektif-font text-md md:text-xl font-semibold leading-none">
-                Erode Marathon 2025
+                Erode Marathon
               </h1>
-              <p className="text-white kollektif-font text-xs md:text-md leading-none">16 November 2025</p>
+              
             </div>
           </div>
           <p className="text-gray-400 mt-2 futura-font max-w-md">
@@ -63,7 +63,7 @@ export default function Footer() {
               <li><a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">Home</a></li>
               <li><a onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">About Us</a></li>
               <li><a onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">Benefits</a></li>
-              <li><a href="https://erodemarathon.com" className="text-gray-400 hover:text-blue-100 transition-colors duration-200 futura-font cursor-pointer">Erode Marathon 2025</a></li>
+              <li><a href="https://erodemarathon.com" className="text-gray-400 hover:text-blue-100 transition-colors duration-200 futura-font cursor-pointer">Erode Marathon</a></li>
             </ul>
           </div>
 

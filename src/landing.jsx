@@ -18,7 +18,7 @@ export default function Landing() {
     <div className="bg-white dark:bg-black text-black transition-colors duration-500 ease-in-out ">
       <div className="h-24 "></div>
 
-      <div className="max-w-7xl mx-auto px-2 sm:px-0">
+      <div className="max-w-7xl mx-auto px-2 lg:px-0">
 
       <div className="flex">
         <div className="flex-1">
@@ -42,7 +42,7 @@ export default function Landing() {
       <Founders/>
       <Course id="benefits" />
       <Timeline />
-      <FAQ/>
+      
       <Footer />
       </div>
   );

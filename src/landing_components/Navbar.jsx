@@ -86,7 +86,7 @@ export default function Navbar() {
 
             <img 
               onClick={() => setDarkMode(!darkMode)}  src={darkMode ? lightmode : darkmode}
-              className=" lg:hidden text-sm dark:bg-black dark:text-white font-semibold  text-gray-600 border p-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-10 w-10">            
+              className=" lg:hidden text-sm dark:bg-black dark:text-white font-semibold  text-gray-600 border p-2 border-gray-600 bg-white shadow-sm hover:shadow-lg transition duration-300 ease-in-out rounded-xl h-10 w-10">            
             </img>
 
             {/* Logo */}
@@ -142,8 +142,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-64 h-full bg-white text-black dark:bg-black dark:text-white shadow-lg transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-0 right-0 w-64 h-full bg-white text-black dark:bg-black dark:text-white shadow-lg transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 z-50 p-6 flex flex-col gap-4`}
       >
         <button onClick={() => setIsOpen(false)} className="mb-4 self-end">

@@ -50,7 +50,7 @@ export default function Course({id}) {
           <h1 className="text-lg md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2">
           Benefits
         </h1>
-          <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center" >Why Join Erode Runners?</h1>
+          <h1 className="text-3xl md:text-5xl font-bold  text-blue-400 text-center" >Why Join Erode Runners?</h1>
         </motion.div>
 
         <motion.p
