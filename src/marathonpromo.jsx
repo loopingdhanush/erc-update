@@ -32,7 +32,7 @@ export default function MarathonPromo() {
               16th November 2025
             </h3>
             <h3 className="text-left mb-2 text-xs font-semibold text-gray-800 dark:text-blue-300">
-              5km · 10km · 21km · 42km
+              5km · 10km · 21.1km · 32.2km
             </h3>
 
             <p className="text-left text-gray-700 dark:text-blue-100 text-xs leading-relaxed pb-4">
